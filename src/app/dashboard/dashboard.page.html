@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Posts</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row *ngFor="let f of postlist" size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="4" >
+    <ion-card style="width: 100%;" >
+      <ion-item line="full" >
+        <ion-label>{{f.name}}</ion-label> 
+       </ion-item>
+    </ion-card>
+  </ion-row>
+
+</ion-content>
