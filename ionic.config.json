@@ -1,0 +1,8 @@
+{
+  "name": "put",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
