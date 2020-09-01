@@ -25,6 +25,9 @@ export class CreateprofilePage implements OnInit {
   state:String;
   country:String;
   zip:String;
+  associationname:String;
+  category:String;
+  postlist:any;
   
 
   constructor(public storage:Storage,public router:Router,public authService:AuthserviceService) { 
@@ -34,7 +37,11 @@ export class CreateprofilePage implements OnInit {
     }else{
       console.log("dashboard Failed")
     } 
-   }) 
+   });
+   authService.getallPosts().subscribe((data) => {
+    console.log(JSON.stringify(data));
+    this.postlist = data;
+  }) 
   }
 
   ngOnInit() {
@@ -54,8 +61,11 @@ export class CreateprofilePage implements OnInit {
     console.log(this.state);
     console.log(this.country);
     console.log(this.zip);
+    console.log(this.associationname);
+    console.log(this.category);
     this.authService.saveProfileToFirestore(this.firstname,this.middlename,this.lastname,this.primarycontact,this.secondarycontact,
-                                            this.houseno,this.street,this.area,this.landmark,this.city,this.state,this.country,this.zip).then(res=> {
+                                            this.houseno,this.street,this.area,this.landmark,this.city,this.state,this.country,this.zip,
+                                            this.associationname,this.category).then(res=> {
                                               this.storage.set('isProfileComplete',"true").then(val => {
                                                 this.router.navigate(['dashboard'])
                                               

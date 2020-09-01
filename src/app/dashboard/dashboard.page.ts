@@ -11,13 +11,17 @@ export class DashboardPage implements OnInit {
   postlist:any;
 
   constructor(public authService:AuthserviceService) { 
-    authService.getallPosts().subscribe((data) => {
+    authService.getallFeeds().subscribe((data) => {
       console.log(JSON.stringify(data));
       this.postlist = data;
     }) 
   }
 
   ngOnInit() {
+  }
+
+  submit(data){
+    console.log(JSON.stringify(data));
   }
 
 }

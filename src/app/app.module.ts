@@ -16,6 +16,7 @@ import { environment } from 'src/environments/environment';
 import { Toast } from '@ionic-native/toast/ngx';
 import { NativeStorage } from '@ionic-native/native-storage/ngx';
 import { IonicStorageModule } from '@ionic/storage';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { IonicStorageModule } from '@ionic/storage';
   AngularFirestoreModule, // firestore
   AngularFireAuthModule, // auth
   AngularFireStorageModule,
+  ReactiveFormsModule,
   IonicStorageModule.forRoot() ],
   providers: [
     StatusBar,

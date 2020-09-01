@@ -1,6 +1,183 @@
-<ion-content [fullscreen]="true">
-  <img id="item_style" src="https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80" alt="Snow">
-  <ion-header collapse="condense">
+<ion-content [fullscreen]="true" class="middle_conn">
+  <img id="item_style" src="https://images.unsplash.com/photo-1471967183320-ee018f6e114a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80" alt="Snow">
+ 
+  <div id="container"> 
+   <ion-grid>
+      <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="4">
+        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="2"></ion-col>
+        <ion-col style="align-self: center;" size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="8">
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">First Name</ion-label>
+                <ion-input type="text" [(ngModel)]="firstname" required></ion-input>
+              </ion-item>
+            </ion-col> 
+  
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Middle Name</ion-label>
+                <ion-input type="text" [(ngModel)]="middlename" required></ion-input>
+              </ion-item>
+            </ion-col>
+  
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Last Name</ion-label>
+                <ion-input type="text" [(ngModel)]="lastname" required></ion-input>
+              </ion-item>
+            </ion-col>
+        
+            
+          </ion-row>
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">House/Flat No</ion-label>
+                <ion-input type="text" [(ngModel)]="houseno" required></ion-input>
+              </ion-item>
+            </ion-col> 
+  
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Street name</ion-label>
+                <ion-input type="text" [(ngModel)]="street" required></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+          </ion-row>
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Area</ion-label>
+                <ion-input type="text" [(ngModel)]="area"></ion-input>
+              </ion-item>
+            </ion-col> 
+  
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Landmark</ion-label>
+                <ion-input type="text" [(ngModel)]="landmark"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+          </ion-row>
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">City</ion-label>
+                <ion-input type="text" [(ngModel)]="city"></ion-input>
+              </ion-item>
+            </ion-col> 
+  
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">State</ion-label>
+                <ion-input type="text" [(ngModel)]="state"></ion-input>
+              </ion-item>
+            </ion-col>
+  
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Country</ion-label>
+                <ion-input type="text" [(ngModel)]="country"></ion-input>
+              </ion-item>
+            </ion-col>
+            
+        
+            
+          </ion-row>
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Primary Contact</ion-label>
+                <ion-input type="text" [(ngModel)]="primarycontact" ></ion-input>
+              </ion-item>
+            </ion-col> 
+  
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Secondary Contact</ion-label>
+                <ion-input type="text" [(ngModel)]="secondarycontact"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+          </ion-row>
+  
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="4"></ion-col>
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="4">
+              <ion-item lines="full">
+                <ion-label position="floating">Zip Code</ion-label>
+                <ion-input type="text" [(ngModel)]="zip"></ion-input>
+              </ion-item>
+            </ion-col> 
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="4"></ion-col>
+          </ion-row>
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="3"></ion-col>
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="6">
+              <ion-item lines="full">
+                <ion-label position="floating">Association Name(if Any)</ion-label>
+                <ion-input type="text" [(ngModel)]="associationname"></ion-input>
+              </ion-item>
+            </ion-col> 
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="3"></ion-col>
+          </ion-row>
+          <ion-row style="align-self: center;">
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+            <ion-col size-xs="12" size-sm="12" size="12" size-lg="4" size-xl="8">
+              <ion-item>
+                <ion-label>select category</ion-label>
+                <ion-select [(ngModel)]="category">
+                    <ion-select-option *ngFor="let f of postlist" value="{{f.name}}">{{f.name}}</ion-select-option>
+                </ion-select>
+            </ion-item>
+            </ion-col> 
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="2" size-xl="2"></ion-col>
+          </ion-row>
+          
+          <ion-button (click)="saveProfile()">Save</ion-button>
+         
+            
+            
+              <div class="divider line one-line;" style="color: white;">or</div>
+              <ion-button class="form-button" type="submit" color="danger" (click)="authService.GoogleAuth()">Signin with Google</ion-button>
+              <div style="height: 10px;"></div>
+               <!-- <ion-button type="submit" style="background-color: #3B5598;"  >Signin with Facebook</ion-button> -->
+         
+        </ion-col>
+        
+        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="2"></ion-col>
+      </ion-row> 
+     </ion-grid>
+      </div>
+</ion-content>
+ 
+
+   <!-- <div >
+     <img class="center_img" src="https://pngimage.net/wp-content/uploads/2018/05/dummy-logo-png-8.png">
+    <h1 class="heading_ls">Your Review is Your Power</h1>
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="text" #email required></ion-input>
+    </ion-item> 
+
+    <ion-item lines="full">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input type="password" #password required></ion-input>
+    </ion-item>
+    <ion-button class="form-button" type="submit" (click)="register(email, password)" expand="block">Register</ion-button>
+
+    
+</div> -->
+
+
+<!-- <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
@@ -11,97 +188,101 @@
       <ion-row>
         <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="6"></ion-col>
         <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="6">
-          <ion-col>
-            <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="4">
-              <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
-                <ion-item >
-                 <ion-label position="floating">First Name</ion-label>
-                 <ion-input type="text" [(ngModel)]="firstname" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
-                <ion-item >
-                 <ion-label position="floating">Middle Name</ion-label>
-                 <ion-input type="text" [(ngModel)]="middlename" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
-                <ion-item >
-                 <ion-label position="floating">Last Name</ion-label>
-                 <ion-input type="text" [(ngModel)]="lastname" required></ion-input>
-               </ion-item>
-              </ion-col>
-            </ion-row>
-            <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="6">
-              <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="6">
-                <ion-item >
-                 <ion-label position="floating">Primary Contact</ion-label>
-                 <ion-input type="text" [(ngModel)]="primarycontact" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="6">
-                <ion-item >
-                 <ion-label position="floating">Secondary Contact</ion-label>
-                 <ion-input type="text" [(ngModel)]="secondarycontact" required></ion-input>
-               </ion-item>
-              </ion-col>
-            </ion-row>
-            <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-              <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-                <ion-item >
-                 <ion-label position="floating">House/Flat No</ion-label>
-                 <ion-input type="text" [(ngModel)]="houseno" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-                <ion-item >
-                 <ion-label position="floating">Street</ion-label>
-                 <ion-input type="text" [(ngModel)]="street" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-                <ion-item >
-                 <ion-label position="floating">Area</ion-label>
-                 <ion-input type="text" [(ngModel)]="area" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-                <ion-item >
-                 <ion-label position="floating">LandMark*</ion-label>
-                 <ion-input type="text" [(ngModel)]="landmark" required></ion-input>
-               </ion-item>
-              </ion-col>
-            </ion-row>
-            <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="3" size-xl="3">
-              <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
-                <ion-item >
-                 <ion-label position="floating">City</ion-label>
-                 <ion-input type="text" [(ngModel)]="city" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
-                <ion-item >
-                 <ion-label position="floating">State</ion-label>
-                 <ion-input type="text" [(ngModel)]="state" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
-                <ion-item >
-                 <ion-label position="floating">Country</ion-label>
-                 <ion-input type="text" [(ngModel)]="country" required></ion-input>
-               </ion-item>
-              </ion-col>
-              <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
-                <ion-item >
-                 <ion-label position="floating">Zip</ion-label>
-                 <ion-input type="text" [(ngModel)]="zip" required></ion-input>
-               </ion-item>
-              </ion-col>
-            </ion-row>
-            <ion-button expand="full" (click)="saveProfile()">Save</ion-button>
-          </ion-col> 
+          <ion-list>
+            <ion-col>
+              <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="4">
+                <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
+                  <ion-item >
+                   <ion-label position="floating">First Name</ion-label>
+                   <ion-input type="text" [(ngModel)]="firstname" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
+                  <ion-item >
+                   <ion-label position="floating">Middle Name</ion-label>
+                   <ion-input type="text" [(ngModel)]="middlename" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
+                  <ion-item >
+                   <ion-label position="floating">Last Name</ion-label>
+                   <ion-input type="text" [(ngModel)]="lastname" required></ion-input>
+                 </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="6" size-xl="6">
+                <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="6">
+                  <ion-item >
+                   <ion-label position="floating">Primary Contact</ion-label>
+                   <ion-input type="text" [(ngModel)]="primarycontact" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="6">
+                  <ion-item >
+                   <ion-label position="floating">Secondary Contact</ion-label>
+                   <ion-input type="text" [(ngModel)]="secondarycontact" required></ion-input>
+                 </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+                <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+                  <ion-item >
+                   <ion-label position="floating">House/Flat No</ion-label>
+                   <ion-input type="text" [(ngModel)]="houseno" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+                  <ion-item >
+                   <ion-label position="floating">Street</ion-label>
+                   <ion-input type="text" [(ngModel)]="street" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+                  <ion-item >
+                   <ion-label position="floating">Area</ion-label>
+                   <ion-input type="text" [(ngModel)]="area" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+                  <ion-item >
+                   <ion-label position="floating">LandMark*</ion-label>
+                   <ion-input type="text" [(ngModel)]="landmark" required></ion-input>
+                 </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-row size-xs="12" size-sm="12" size-md="12" size-lg="3" size-xl="3">
+                <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
+                  <ion-item >
+                   <ion-label position="floating">City</ion-label>
+                   <ion-input type="text" [(ngModel)]="city" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
+                  <ion-item >
+                   <ion-label position="floating">State</ion-label>
+                   <ion-input type="text" [(ngModel)]="state" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
+                  <ion-item >
+                   <ion-label position="floating">Country</ion-label>
+                   <ion-input type="text" [(ngModel)]="country" required></ion-input>
+                 </ion-item>
+                </ion-col>
+                <ion-col size-xs="12" size-sm="12" size-md="3" size-lg="3" size-xl="3">
+                  <ion-item >
+                   <ion-label position="floating">Zip</ion-label>
+                   <ion-input type="text" [(ngModel)]="zip" required></ion-input>
+                 </ion-item>
+                </ion-col>
+              </ion-row>
+              <ion-button expand="full" (click)="saveProfile()">Save</ion-button>
+            </ion-col> 
+          </ion-list>
         </ion-col>
       </ion-row>
      </ion-grid>
   </div>
+  </ion-content> -->
  
+

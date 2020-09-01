@@ -48,6 +48,18 @@ export class AuthserviceService {
    return this.firestore.collection('Posts').valueChanges();
   }
 
+  getallFeeds(){
+   return this.firestore.collection('Feeds').valueChanges();
+  }
+
+  registerToFirebase(uid,firstname,middlename,lastname){
+    return this.firestore.collection('Users').doc(uid).set({
+      firstname: firstname,
+      lastname: lastname,
+      middlename:middlename
+    })
+  }
+
   saveProfileToFirestore(
     firstname,
     middlename,
@@ -61,7 +73,9 @@ export class AuthserviceService {
     city,
     state,
     country,
-    zip){
+    zip,
+    assocation,
+    category){
     return this.storage.get('uid').then(val => {
     return this.firestore.collection('Users').doc(val).set({
     firstname: firstname,
@@ -76,7 +90,10 @@ export class AuthserviceService {
     city:city,
     state:state,
     country: country,
-    zip:zip       
+    zip:zip,
+    associationname: assocation,
+    category:category
+
      })
     })
   }
